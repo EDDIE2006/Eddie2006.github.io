@@ -3,13 +3,12 @@ I am a Chinese national originally from Baotou, Inner Mongolia Autonomous Region
 
 #### Contact
 
-Email: zxrui0809@gmail.com
-Instagram: eddiezhang689
-Wechat: Zhanggggggg77
+Email: zxrui0809@gmail.com  
+Instagram: eddiezhang689  
+Wechat: Zhanggggggg77  
 
 #### Education
-M.S., Applied Mathematics, Pennsylvania State University, 2025-?
-
+M.S., Applied Mathematics, Pennsylvania State University, 2025-?  
 Bilingual IB Diploma, Beijing Huijia Private School, 2021—2025
 
 #### Research Interests
