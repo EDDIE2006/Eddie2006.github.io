@@ -1,17 +1,14 @@
 
-
-[![senli1073](https://img.shields.io/badge/senli1073-github-blue?logo=github)](https://github.com/senli1073)
-
-He is currently a Fellow in the Department of Earth and Planetary Sciences (EPS) at Harvard University.
+I am a Chinese national originally from Baotou, Inner Mongolia Autonomous Region, China. I received my primary education at Wulan Primary School in Baotou, and then attended Baotou No. 29 Middle School for my junior high studies. In the second half of my second year of junior high, I transferred to Beijing Huijia Private School, where I completed both my junior and senior high school education and obtained the IB Bilingual Diploma. Currently, I am pursuing a Bachelor of Science degree in Applied Mathematics at Pennsylvania State University in the United States.
 
 #### Contact
 
-Email: senli[at]fas.harvard.edu
+Email: zxrui0809@gmail.com
 
 #### Education
-M.E., Computer Science and Technology, China University of Mining and Technology, 2022—2025.\
-B.E., Data Science and Big Data Technology, China University of Mining and Technology, 2018—2022.
+M.S., Applied Mathematics, Pennsylvania State University, 2025-?
+Bilingual IB Diploma, Beijing Huijia Private School, 2021—2025
 
 #### Research Interests
-Deep Learning, Artificial Intelligence Seismology, Mine Microseismic.
+Computer Science, Mathematics, Artificial Intelligence, Physics.
 
