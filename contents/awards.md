@@ -1,16 +1,12 @@
 
-- Outstanding Graduate Award (CUMT), 2025.
+- China National Silver (CANADIAN ASSOCIATION OF PHYSICISTSASSOCIATION), 2024.
 
-- National Scholarship for Graduate Student, 2024.
+- Canadian Top 20 (CANADIAN ASSOCIATION OF PHYSICISTSASSOCIATION), 2024.
 
-- First-Prize Scholarship (CUMT), 2024.
+- National Honorable Mention (Continental Calculus League), 2024.
 
-- First-Prize Scholarship (CUMT), 2023.
+- USACO 2024 Contest Gold (USA Computing Olympiad), 2024.
 
-- Freshman Scholarship (CUMT), 2022.
+- AMC12 CERTIFICATE OF DISTINCTION (Mathematical Association of America), 2023.
 
-- Outstanding Graduation Project Award (Jiangsu Province), 2022.
-
-- First-Prize Enterprise Scholarship (CUMT), 2020.
-
-- First-Prize Scholarship (CUMT), 2019.
+- AMC12 CERTIFICATE OF EXCELLENCE (Mathematical Association of America), 2023.
