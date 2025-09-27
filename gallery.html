@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 完全复制index.html的head部分 -->
+    <style>
+        /* 照片集样式 */
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .gallery-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.03);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .gallery-caption {
+            padding: 1rem;
+            text-align: center;
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body id="page-top">
+    <!-- 导航栏使用步骤2中的新导航栏 -->
+    <nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+    <div class="container px-5">
+        <a id="page-top-title" class="navbar-brand fw-bold" href="index.html"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
+            MENU <i class="bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link me-lg-3" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link me-lg-3" href="biography.html">BIOGRAPHY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link me-lg-3" href="achievements.html">ACHIEVEMENTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link me-lg-3" href="gallery.html">GALLERY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link me-lg-3" href="contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- 顶部背景区 -->
+    <section class="top-section" style="background-image: url('static/assets/img/background.jpeg');">
+        <div class="top-section-content">
+            <div class="container px-5">
+                <h2 class="text-white display-3 lh-1 font-alt">Photo Gallery</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- 照片集内容 -->
+    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="gallery">
+        <div class="container px-5">
+            <header>
+                <h2><i class="bi bi-images"></i>&nbsp;Photo Collection</h2>
+            </header>
+            <div class="main-body" id="gallery-intro"></div>
+            
+            <!-- 照片网格 -->
+            <div class="gallery-container" id="gallery-container">
+                <!-- 照片将通过JS动态加载 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-bottom text-center py-5">
+        <!-- 与主页 footer 一致 -->
+    </footer>
+
+    <!-- 脚本 -->
+    <script>
+        window.addEventListener('DOMContentLoaded', event => {
+            // 加载配置
+            fetch('contents/config.yml')
+                .then(response => response.text())
+                .then(text => {
+                    const yml = jsyaml.load(text);
+                    Object.keys(yml).forEach(key => {
+                        document.getElementById(key).innerHTML = yml[key];
+                    });
+                });
+
+            // 加载照片集说明
+            fetch('contents/gallery.md')
+                .then(response => response.text())
+                .then(markdown => {
+                    document.getElementById('gallery-intro').innerHTML = marked.parse(markdown);
+                });
+
+            // 动态加载照片（需先将照片放入static/assets/img/gallery/目录）
+            const photos = [
+                { src: 'static/assets/img/gallery/photo1.jpg', caption: 'Description for Photo 1' },
+                { src: 'static/assets/img/gallery/photo2.jpg', caption: 'Description for Photo 2' },
+                { src: 'static/assets/img/gallery/photo3.jpg', caption: 'Description for Photo 3' },
+                // 添加更多照片...
+            ];
+
+            const galleryContainer = document.getElementById('gallery-container');
+            photos.forEach(photo => {
+                const item = document.createElement('div');
+                item.className = 'gallery-item';
+                item.innerHTML = `
+                    <img src="${photo.src}" alt="${photo.caption}">
+                    <div class="gallery-caption">${photo.caption}</div>
+                `;
+                galleryContainer.appendChild(item);
+            });
+        });
+    </script>
+</body>
+</html>
